@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Photo Gallery</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        h1{
+            text-align: center;
+            padding: 45px 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+        .container img{
+            width: 75%;
+            
+            
+        }
+        .phone{
+            border: 2px solid burlywood;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .phone p,h2,h4{
+            margin-left: 10px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 700px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        /* @media screen and(min-width:1200px){
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h1>Popular Collection</h1>
+    <div class="container">
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 150000</h2>
+            <h4>item-1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eum.</p>
+        </div>
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 250000</h2>
+            <h4>item-2</h4>
+            <p>Facilis eligendi consequatur cupiditate, vel aspernatur omnis libero magni debitis.</p>
+        </div>
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 350000</h2>
+            <h4>item-3</h4>
+            <p>Ipsa atque, perferendis earum deserunt id voluptas nobis. Sed, exercitationem!</p>
+        </div>
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 450000</h2>
+            <h4>item-4</h4>
+            <p>Iusto tempora voluptatem fugiat obcaecati, rem aperiam veritatis accusamus non!</p>
+        </div>
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 550000</h2>
+            <h4>item-5</h4>
+            <p>Libero quos iure possimus hic incidunt ratione recusandae labore. Qui!</p>
+        </div>
+        <div class="phone">
+            <img src="phone/phone.jpg" alt="">
+            <p><i class="fa-regular fa-star-half-stroke"></i></p>
+            <h2>price: 650000</h2>
+            <h4>item-6</h4>
+            <p>Optio assumenda omnis eligendi, dolore accusantium vitae quibusdam nostrum quasi.</p>
+        </div>
+    </div>
+</body>
+</html>
